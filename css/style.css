@@ -291,6 +291,7 @@ a.w3_agile_vimeo:hover{
 	margin: 0.8em 2.5em 0;
     padding: 1em;
 	position: relative;
+	transition-delay: 0.1s;
   -moz-transition: ease-out 0.3s 0.1s;
   -o-transition: ease-out 0.3s 0.1s;
   -webkit-transition: ease-out 0.3s;
@@ -356,7 +357,7 @@ a.w3_agile_vimeo:hover{
     font-size: 20px;
     margin: 10px 0;
     letter-spacing: 1px;
-    color: #000;
+    color: #ffffff
 }
 .w3_banner_info_grid ul li{
 	display:inline-block;
@@ -385,7 +386,7 @@ span.char3 {
 }
 .w3_banner_info_grid p {
     margin: 1.5em 0 3em;
-    color: #000;
+    color: #ffffff;
     line-height: 28px;
     letter-spacing: 1px;
     font-size: 14px;
@@ -398,7 +399,8 @@ span.char3 {
     width: 40px;
     height: 40px;
     font-size: 40px;
-    line-height: 40px;
+	line-height: 40px;
+	animation: bounce 2s infinite ease-in-out;
     -webkit-animation: bounce 2s infinite ease-in-out;
 }
 .thim-click-to-bottom i {
@@ -407,6 +409,14 @@ span.char3 {
     border: 2px solid #fff;
     border-radius: 10px;
     font-size: 16px;
+}
+@keyframes bounce {
+	0%, 20%, 60%, 100%  { -ms-transform: translateY(0); }
+	0%, 20%, 60%, 100%  { -o-transform: translateY(0); }
+	0%, 20%, 60%, 100%  { -moz-transform: translateY(0); }
+	0%, 20%, 60%, 100%  { -webkit-transform: translateY(0); }
+    40%  { -webkit-transform: translateY(-20px); }
+	80% { -webkit-transform: translateY(-10px); }
 }
 @-webkit-keyframes bounce {
 	0%, 20%, 60%, 100%  { -ms-transform: translateY(0); }
@@ -418,6 +428,10 @@ span.char3 {
 }
 /*-- //button-effect --*/
 /*-- //banner --*/
+
+.mb-2 {
+	margin-bottom: 1rem;
+}
 
 /*-- bootstrap-modal-pop-up --*/
 /* modal */
@@ -735,7 +749,7 @@ b, strong {
 
 /* education */
 .education-agile-w3l-year {
-    width: 30%;
+    width: 100%;
     float: left;
     border: 1px solid #11b563;
     border-bottom: transparent;
@@ -1213,6 +1227,12 @@ ul.top-links li a i.fa:hover {
 }
 .top-links i.fa.fa-linkedin {
     background: #0077b5;
+}
+.top-links i.fa.fa-instagram {
+    background: #e41274;
+}
+.top-links i.fa.fa-whatsapp {
+    background: #0ec91e;
 }
 ul.top-links {
     margin-top: 3em;
